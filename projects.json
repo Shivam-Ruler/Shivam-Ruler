@@ -1,0 +1,42 @@
+[
+  {
+    "name": "AI Anomaly Detection",
+    "repo": "Shivam-Ruler/ai-anomaly-detection",
+    "description": "Detect unusual changes in business metrics and generate clear, explainable summaries.",
+    "tags": [
+      "Python",
+      "Pandas",
+      "ML"
+    ]
+  },
+  {
+    "name": "Scientific Research Assistant",
+    "repo": "Shivam-Ruler/scientific-research-assistant",
+    "description": "AI assistant for literature analysis, research gaps, hypothesis generation, and experiment support.",
+    "tags": [
+      "Python",
+      "AI/ML",
+      "LLM"
+    ]
+  },
+  {
+    "name": "Data Analytics Dashboard",
+    "repo": "Shivam-Ruler/data-analytics-dashboard",
+    "description": "Interactive analytics dashboard for exploring trends, KPIs, and business insights.",
+    "tags": [
+      "Python",
+      "SQL",
+      "Power BI"
+    ]
+  },
+  {
+    "name": "Developer Portfolio",
+    "repo": "Shivam-Ruler/developer-portfolio",
+    "description": "Responsive personal portfolio showcasing projects, skills, and learning journey.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  }
+]
