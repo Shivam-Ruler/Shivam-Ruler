@@ -25,14 +25,14 @@
 
 I'm building my foundation in **Python, Data Analytics, Machine Learning, and AI** with a focus on turning what I learn into practical projects.
 
-- 🐍 Learning Python and strengthening programming fundamentals
-- 📊 Exploring Data Analytics, visualization, and business insights
-- 🤖 Building toward Machine Learning and AI/ML
-- 🗄️ Learning SQL and working with structured data
-- 📈 Exploring Power BI for dashboards and data storytelling
-- 🌐 Building web projects with HTML, CSS, and JavaScript
-- 🔧 Using Git, GitHub, VS Code, and Google Colab
-- 🎯 Focused on becoming a strong Data Science / AI/ML professional
+-  Learning Python and strengthening programming fundamentals
+-  Exploring Data Analytics, visualization, and business insights
+-  Building toward Machine Learning and AI/ML
+-  Learning SQL and working with structured data
+-  Exploring Power BI for dashboards and data storytelling
+-  Building web projects with HTML, CSS, and JavaScript
+-  Using Git, GitHub, VS Code, and Google Colab
+-  Focused on becoming a strong Data Science / AI/ML professional
 
 > **Learn → Build → Analyze → Improve → Repeat.**
 
@@ -42,13 +42,13 @@ I'm building my foundation in **Python, Data Analytics, Machine Learning, and AI
 
 | Area | Focus |
 |---|---|
-| 🐍 Python | Programming, OOP & problem solving |
-| 📊 Data Analytics | Pandas, NumPy & visualization |
-| 🗄️ SQL | Queries, joins & data analysis |
-| 📈 Power BI | Dashboards & data visualization |
-| 🤖 AI/ML | Machine learning fundamentals |
-| 🌐 Web | HTML, CSS & JavaScript |
-| 🔧 Tools | Git, GitHub, VS Code & Colab |
+|  Python | Programming, OOP & problem solving |
+|  Data Analytics | Pandas, NumPy & visualization |
+|  SQL | Queries, joins & data analysis |
+|  Power BI | Dashboards & data visualization |
+|  AI/ML | Machine learning fundamentals |
+|  Web | HTML, CSS & JavaScript |
+|  Tools | Git, GitHub, VS Code & Colab |
 
 <!-- ===== TECH STACK ===== -->
 
