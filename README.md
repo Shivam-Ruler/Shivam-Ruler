@@ -62,11 +62,6 @@ I'm building my foundation in **Python, Data Analytics, Machine Learning, and AI
 
 <br/><br/>
 
-### Data & AI
-
-<img src="https://skillicons.dev/icons?i=numpy,pandas" />
-
-<br/><br/>
 
 ### Tools & Platforms
 
