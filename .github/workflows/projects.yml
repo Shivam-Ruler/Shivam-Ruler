@@ -1,0 +1,201 @@
+name: Generate Projects Panel
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "projects.json"
+      - ".github/workflows/projects.yml"
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Projects SVG
+        run: |
+          python3 <<'PY'
+          import json
+          import html
+
+          with open("projects.json", "r", encoding="utf-8") as f:
+              projects = json.load(f)
+
+          width = 1180
+          card_width = 570
+          card_height = 190
+          gap = 20
+          rows = (len(projects) + 1) // 2
+          height = rows * (card_height + gap) + 20
+
+          def esc(text):
+              return html.escape(str(text))
+
+          cards = []
+
+          for i, project in enumerate(projects):
+              col = i % 2
+              row = i // 2
+
+              x = 10 + col * (card_width + gap)
+              y = 10 + row * (card_height + gap)
+
+              name = esc(project.get("name", "Project"))
+              description = esc(project.get("description", ""))
+              repo = project.get("repo", "")
+              tags = project.get("tags", [])
+
+              tag_html = ""
+              tag_x = x + 22
+
+              for tag in tags[:4]:
+                  tag = esc(tag)
+                  tag_html += f'''
+                  <rect x="{tag_x}" y="{y + 143}" width="{len(tag) * 8 + 24}"
+                        height="25" rx="12"
+                        class="tag"/>
+                  <text x="{tag_x + 12}" y="{y + 160}"
+                        class="tagText">{tag}</text>
+                  '''
+                  tag_x += len(tag) * 8 + 34
+
+              cards.append(f'''
+              <a href="https://github.com/{repo}" target="_blank">
+                <g class="card">
+                  <rect x="{x}" y="{y}" width="{card_width}"
+                        height="{card_height}" rx="18"/>
+
+                  <circle cx="{x + 28}" cy="{y + 30}" r="7" class="dot"/>
+
+                  <text x="{x + 48}" y="{y + 37}" class="title">
+                    {name}
+                  </text>
+
+                  <text x="{x + 22}" y="{y + 75}" class="desc">
+                    {description[:78]}
+                  </text>
+
+                  {tag_html}
+
+                  <text x="{x + card_width - 25}" y="{y + 37}"
+                        class="arrow">↗</text>
+                </g>
+              </a>
+              ''')
+
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="{width}" height="{height}"
+          viewBox="0 0 {width} {height}">
+
+          <style>
+            .card {{
+              fill:#0C1426;
+              stroke:#22D3EE;
+              stroke-opacity:.28;
+              transition:.3s;
+            }}
+
+            .card:hover {{
+              stroke:#22D3EE;
+              stroke-opacity:.8;
+            }}
+
+            .title {{
+              fill:#F8FAFC;
+              font:600 20px ui-monospace,SFMono-Regular,Menlo,monospace;
+            }}
+
+            .desc {{
+              fill:#94A3B8;
+              font:14px ui-monospace,SFMono-Regular,Menlo,monospace;
+            }}
+
+            .tag {{
+              fill:#7C3AED;
+              fill-opacity:.25;
+              stroke:#A78BFA;
+              stroke-opacity:.5;
+            }}
+
+            .tagText {{
+              fill:#EDE9FE;
+              font:12px ui-monospace,SFMono-Regular,Menlo,monospace;
+            }}
+
+            .dot {{
+              fill:#10B981;
+            }}
+
+            .arrow {{
+              fill:#22D3EE;
+              font:24px sans-serif;
+            }}
+
+            @media (prefers-color-scheme: light) {{
+              .card {{
+                fill:#FFFFFF;
+                stroke:#0891B2;
+                stroke-opacity:.30;
+              }}
+
+              .card:hover {{
+                stroke:#0891B2;
+                stroke-opacity:.8;
+              }}
+
+              .title {{
+                fill:#0F172A;
+              }}
+
+              .desc {{
+                fill:#475569;
+              }}
+
+              .tag {{
+                fill:#7C3AED;
+                fill-opacity:.12;
+                stroke:#7C3AED;
+                stroke-opacity:.4;
+              }}
+
+              .tagText {{
+                fill:#475569;
+              }}
+
+              .arrow {{
+                fill:#0891B2;
+              }}
+            }}
+          </style>
+
+          {''.join(cards)}
+          </svg>'''
+
+          import os
+          os.makedirs("out", exist_ok=True)
+
+          with open("out/projects.svg", "w", encoding="utf-8") as f:
+              f.write(svg)
+
+          print("Projects SVG generated successfully.")
+          PY
+
+      - name: Publish Projects SVG
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: projects
+          build_dir: out
+          commit_message: "Update projects panel"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
