@@ -129,59 +129,6 @@ I'm building my foundation in **Python, Data Analytics, Machine Learning, and AI
 
 </div>
 
-<!-- ===== LEARNING JOURNEY ===== -->
-
-## 📚 Learning Journey
-
-```text
-Python
-  │
-  ├── Programming Fundamentals
-  ├── Functions & Data Structures
-  └── Object-Oriented Programming
-  │
-  ▼
-Data Analytics
-  │
-  ├── NumPy
-  ├── Pandas
-  ├── Data Cleaning
-  ├── Visualization
-  ├── SQL
-  └── Power BI
-  │
-  ▼
-Machine Learning
-  │
-  ├── Statistics
-  ├── Supervised Learning
-  ├── Unsupervised Learning
-  └── Model Evaluation
-  │
-  ▼
-AI / ML
-  │
-  ├── Deep Learning
-  ├── Generative AI
-  ├── LLMs
-  └── AI-powered Applications
-```
-
-<!-- ===== GOALS ===== -->
-
-## 🎯 Goals
-
-- [ ] Strengthen Python fundamentals
-- [ ] Complete Python OOP
-- [ ] Build strong SQL skills
-- [ ] Become comfortable with Pandas & NumPy
-- [ ] Build practical Data Analytics projects
-- [ ] Create Power BI dashboards
-- [ ] Learn Machine Learning fundamentals
-- [ ] Build AI/ML projects
-- [ ] Improve GitHub portfolio
-- [ ] Contribute to Open Source
-
 <!-- ===== TROPHIES ===== -->
 
 ## 🏆 GitHub Achievements
