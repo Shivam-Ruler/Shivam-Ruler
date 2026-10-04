@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="1180" height="440"
+viewBox="0 0 1180 440">
+
+<style>
+  .card {
+    fill:#0C1426;
+    stroke:#22D3EE;
+    stroke-opacity:.28;
+    transition:.3s;
+  }
+
+  .card:hover {
+    stroke:#22D3EE;
+    stroke-opacity:.8;
+  }
+
+  .title {
+    fill:#F8FAFC;
+    font:600 20px ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+
+  .desc {
+    fill:#94A3B8;
+    font:14px ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+
+  .tag {
+    fill:#7C3AED;
+    fill-opacity:.25;
+    stroke:#A78BFA;
+    stroke-opacity:.5;
+  }
+
+  .tagText {
+    fill:#EDE9FE;
+    font:12px ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+
+  .dot {
+    fill:#10B981;
+  }
+
+  .arrow {
+    fill:#22D3EE;
+    font:24px sans-serif;
+  }
+
+  @media (prefers-color-scheme: light) {
+    .card {
+      fill:#FFFFFF;
+      stroke:#0891B2;
+      stroke-opacity:.30;
+    }
+
+    .card:hover {
+      stroke:#0891B2;
+      stroke-opacity:.8;
+    }
+
+    .title {
+      fill:#0F172A;
+    }
+
+    .desc {
+      fill:#475569;
+    }
+
+    .tag {
+      fill:#7C3AED;
+      fill-opacity:.12;
+      stroke:#7C3AED;
+      stroke-opacity:.4;
+    }
+
+    .tagText {
+      fill:#475569;
+    }
+
+    .arrow {
+      fill:#0891B2;
+    }
+  }
+</style>
+
+
+    <a href="https://github.com/Shivam-Ruler/ai-anomaly-detection" target="_blank">
+      <g class="card">
+        <rect x="10" y="10" width="570"
+              height="190" rx="18"/>
+
+        <circle cx="38" cy="40" r="7" class="dot"/>
+
+        <text x="58" y="47" class="title">
+          AI Anomaly Detection
+        </text>
+
+        <text x="32" y="85" class="desc">
+          Detect unusual changes in business metrics and generate clear, explainable sum
+        </text>
+
+        
+        <rect x="32" y="153" width="72"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="44" y="170"
+              class="tagText">Python</text>
+        
+        <rect x="114" y="153" width="72"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="126" y="170"
+              class="tagText">Pandas</text>
+        
+        <rect x="196" y="153" width="40"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="208" y="170"
+              class="tagText">ML</text>
+        
+
+        <text x="555" y="47"
+              class="arrow">↗</text>
+      </g>
+    </a>
+    
+    <a href="https://github.com/Shivam-Ruler/scientific-research-assistant" target="_blank">
+      <g class="card">
+        <rect x="600" y="10" width="570"
+              height="190" rx="18"/>
+
+        <circle cx="628" cy="40" r="7" class="dot"/>
+
+        <text x="648" y="47" class="title">
+          Scientific Research Assistant
+        </text>
+
+        <text x="622" y="85" class="desc">
+          AI assistant for literature analysis, research gaps, hypothesis generation, an
+        </text>
+
+        
+        <rect x="622" y="153" width="72"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="634" y="170"
+              class="tagText">Python</text>
+        
+        <rect x="704" y="153" width="64"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="716" y="170"
+              class="tagText">AI/ML</text>
+        
+        <rect x="778" y="153" width="48"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="790" y="170"
+              class="tagText">LLM</text>
+        
+
+        <text x="1145" y="47"
+              class="arrow">↗</text>
+      </g>
+    </a>
+    
+    <a href="https://github.com/Shivam-Ruler/data-analytics-dashboard" target="_blank">
+      <g class="card">
+        <rect x="10" y="220" width="570"
+              height="190" rx="18"/>
+
+        <circle cx="38" cy="250" r="7" class="dot"/>
+
+        <text x="58" y="257" class="title">
+          Data Analytics Dashboard
+        </text>
+
+        <text x="32" y="295" class="desc">
+          Interactive analytics dashboard for exploring trends, KPIs, and business insig
+        </text>
+
+        
+        <rect x="32" y="363" width="72"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="44" y="380"
+              class="tagText">Python</text>
+        
+        <rect x="114" y="363" width="48"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="126" y="380"
+              class="tagText">SQL</text>
+        
+        <rect x="172" y="363" width="88"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="184" y="380"
+              class="tagText">Power BI</text>
+        
+
+        <text x="555" y="257"
+              class="arrow">↗</text>
+      </g>
+    </a>
+    
+    <a href="https://github.com/Shivam-Ruler/developer-portfolio" target="_blank">
+      <g class="card">
+        <rect x="600" y="220" width="570"
+              height="190" rx="18"/>
+
+        <circle cx="628" cy="250" r="7" class="dot"/>
+
+        <text x="648" y="257" class="title">
+          Developer Portfolio
+        </text>
+
+        <text x="622" y="295" class="desc">
+          Responsive personal portfolio showcasing projects, skills, and learning journe
+        </text>
+
+        
+        <rect x="622" y="363" width="56"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="634" y="380"
+              class="tagText">HTML</text>
+        
+        <rect x="688" y="363" width="48"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="700" y="380"
+              class="tagText">CSS</text>
+        
+        <rect x="746" y="363" width="104"
+              height="25" rx="12"
+              class="tag"/>
+        <text x="758" y="380"
+              class="tagText">JavaScript</text>
+        
+
+        <text x="1145" y="257"
+              class="arrow">↗</text>
+      </g>
+    </a>
+    
+</svg>
